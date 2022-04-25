@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -29,7 +29,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="product:${products}" th:odject="${product}">
+    <tr th:each="product:${products}" th:object="${product}">
         <td th:text="*{productId}"></td>
         <td th:text="*{productName}"></td>
         <td th:text="*{category}"></td>

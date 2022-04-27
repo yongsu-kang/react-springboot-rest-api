@@ -51,7 +51,7 @@ public class OrderJdbcRepository implements OrderRepository {
         paramMap.put("productId", item.productId().toString().getBytes());
         paramMap.put("category", item.category().toString());
         paramMap.put("price", item.price());
-        paramMap.put("quantity", item.price());
+        paramMap.put("quantity", item.quantity());
         paramMap.put("createdAt", createdAt);
         paramMap.put("updatedAt", updatedAt);
         return paramMap;
